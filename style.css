@@ -1,0 +1,54 @@
+.heart_love {
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  padding: 0;
+  overflow: hidden;
+  background: #FFF5B7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  font-weight: bold;
+  color: #ff4d6d;
+}
+
+.heart {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  background: red;
+  transform: rotate(-45deg);
+  margin: 100px auto;
+}
+
+.heart:before,
+.heart:after {
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background: red;
+  border-radius: 50%;
+}
+
+.heart:before {
+  top: -100px;
+  left: 0;
+}
+
+.heart:after {
+  left: 100px;
+  top: 0;
+}
+
+.text {
+  position: absolute;
+  transform: rotate(45deg);
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  width: 100%;
+  top: 40%;
+  left: 0;
+}
